@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".creecompte">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputnom"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="19dp"
+                    android:paddingLeft="7dp"
+                    android:inputType="textPersonName"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/nom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputprenom"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_below="@id/inputnom">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="19dp"
+                    android:paddingLeft="7dp"
+                    android:inputType="textPersonName"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/prenom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputemail"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputprenom"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="19dp"
+                    android:paddingLeft="7dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_alignParentTop="true"
+                    android:hint="@string/e_mail_utilisateur"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputpasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@id/inputemail">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="19dp"
+                    android:paddingLeft="7dp"
+                    android:hint="@string/motdepasse"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputpasword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                android:layout_below="@id/inputpasword">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="19dp"
+                    android:paddingLeft="7dp"
+                    android:hint="@string/motdepasse"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jaccepte"
+                android:layout_below="@id/inputpasword2"
+                android:textColor="@color/border"
+                android:layout_marginTop="25dp" />
+            <Button
+                android:id="@+id/btnlogin"
+                android:text="@string/title_activity_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check"
+                android:background="@drawable/buttonhover"
+                android:textColor="#fff"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="creecompte"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

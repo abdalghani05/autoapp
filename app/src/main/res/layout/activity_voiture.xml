@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voiture">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <TextView
+                android:id="@+id/marque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marque : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/imageSlider"/>
+            <TextView
+                android:id="@+id/txtmarque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/marque"
+                android:layout_below="@id/imageSlider"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:text="AUDI"/>
+            <TextView
+                android:id="@+id/modéle"
+                android:text="Modéle : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtmarque"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnfav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/imageSlider"
+                android:layout_marginLeft="100dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/txtmodéle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/modéle"
+                android:layout_below="@id/txtmarque"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="AUDI"/>
+            <TextView
+                android:id="@+id/version"
+                android:text="Version : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtmodéle"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/version"
+                android:layout_below="@id/txtmodéle"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:text="AUDI"/>
+            <TextView
+                android:id="@+id/prix"
+                android:text="Prix : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txtversion"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtprix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/prix"
+                android:layout_below="@id/txtversion"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:text="AUDI"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#8E8E8E"
+                android:layout_margin="20dp"
+                android:layout_below="@id/txtprix"/>
+            <TextView
+                android:id="@+id/etate"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Fiche technique"
+                android:textSize="22dp"
+                android:textColor="#000"
+                android:layout_below="@id/view"/>
+            <TextView
+                android:id="@+id/anne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etate"
+                android:layout_marginLeft="20dp"
+                android:text="Année de sortie du modèle : "/>
+            <TextView
+                android:id="@+id/txtanne"
+                android:text="2020 - 2020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/anne"
+                android:textColor="#000"
+                android:layout_below="@id/etate"/>
+            <TextView
+                android:id="@+id/Carburant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/anne"
+                android:layout_marginLeft="20dp"
+                android:text="Carburant  : "/>
+            <TextView
+                android:id="@+id/txtcarburant"
+                android:text="Diesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Carburant"
+                android:layout_below="@id/anne"/>
+            <TextView
+                android:id="@+id/Puissance_fiscale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Carburant"
+                android:layout_marginLeft="20dp"
+                android:text="Puissance fiscale  : "/>
+            <TextView
+                android:id="@+id/txtPuissance_fiscale"
+                android:text="6 cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Puissance_fiscale"
+                android:layout_below="@id/Carburant"/>
+            <TextView
+                android:id="@+id/Puissance_réelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Puissance_fiscale"
+                android:layout_marginLeft="20dp"
+                android:text="Puissance réelle  : "/>
+            <TextView
+                android:id="@+id/txtPuissance_réelle"
+                android:text="115 ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Puissance_réelle"
+                android:layout_below="@id/Puissance_fiscale"/>
+            <TextView
+                android:id="@+id/Boite_de_vitesses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Puissance_réelle"
+                android:layout_marginLeft="20dp"
+                android:text="Boite de vitesses  : "/>
+            <TextView
+                android:id="@+id/txtBoite_de_vitesses"
+                android:text="Manuelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Boite_de_vitesses"
+                android:layout_below="@id/Puissance_réelle"/>
+            <TextView
+                android:id="@+id/Nombre_de_rapports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Boite_de_vitesses"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre de rapports  : "/>
+            <TextView
+                android:id="@+id/txtNombre_de_rapports"
+                android:text="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Nombre_de_rapports"
+                android:layout_below="@id/Boite_de_vitesses"/>
+            <TextView
+                android:id="@+id/Vitesse_maxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Nombre_de_rapports"
+                android:layout_marginLeft="20dp"
+                android:text="Vitesse maxi  : "/>
+            <TextView
+                android:id="@+id/txtVitesse_maxi"
+                android:text="175 km/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Vitesse_maxi"
+                android:layout_below="@id/Nombre_de_rapports"/>
+            <TextView
+                android:id="@+id/Conso_ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Vitesse_maxi"
+                android:layout_marginLeft="20dp"
+                android:text="Conso./ville  : "/>
+            <TextView
+                android:id="@+id/txtConso_ville"
+                android:text="5,2 l/100 km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Conso_ville"
+                android:layout_below="@id/Vitesse_maxi"/>
+            <TextView
+                android:id="@+id/Conso_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Conso_ville"
+                android:layout_marginLeft="20dp"
+                android:text="Conso./route  : "/>
+            <TextView
+                android:id="@+id/txtConso_route"
+                android:text="5,2 l/100 km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Conso_route"
+                android:layout_below="@id/Conso_ville"/>
+            <TextView
+                android:id="@+id/Conso_mixte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Conso_route"
+                android:layout_marginLeft="20dp"
+                android:text="Conso./mixte  : "/>
+            <TextView
+                android:id="@+id/txtConso_mixte"
+                android:text="5,2 l/100 km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Conso_mixte"
+                android:layout_below="@id/Conso_route"/>
+            <TextView
+                android:id="@+id/Emission_CO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Conso_mixte"
+                android:layout_marginLeft="20dp"
+                android:text="Emission CO2 : "/>
+            <TextView
+                android:id="@+id/txtEmission_CO2"
+                android:text="119 g/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Emission_CO2"
+                android:layout_below="@id/Conso_mixte"/>
+            <TextView
+                android:id="@+id/Catégorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Emission_CO2"
+                android:layout_marginLeft="20dp"
+                android:text="Catégorie : "/>
+            <TextView
+                android:id="@+id/txtCatégorie"
+                android:text="Suv et 4x4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Catégorie"
+                android:layout_below="@id/Emission_CO2"/>
+            <TextView
+                android:id="@+id/Nombre_de_portes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Catégorie"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre de portes : "/>
+            <TextView
+                android:id="@+id/txtNombre_de_portes"
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Nombre_de_portes"
+                android:layout_below="@id/Catégorie"/>
+            <TextView
+                android:id="@+id/Coffre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Nombre_de_portes"
+                android:layout_marginLeft="20dp"
+                android:text="Coffre (litre) : "/>
+            <TextView
+                android:id="@+id/txtxCoffre"
+                android:text="488 L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toEndOf="@id/Coffre"
+                android:layout_below="@id/Nombre_de_portes"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

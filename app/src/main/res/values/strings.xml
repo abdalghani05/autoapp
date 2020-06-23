@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">AUTOAPP</string>
+    <string name="e_mail_utilisateur">e-mail/Utilisateur</string>
+    <string name="motdepasse" translatable="false">Mot de passe</string>
+    <string name="anncienemotdepasse">Ancienne mot de passe</string>
+    <string name="creemotdepasse">Créez un Mot de Passe</string>
+    <string name="creemotdepasse2">Confirmez votre Mot de Passe</string>
+    <string name="motdepasseoublie" translatable="false">Mot de passe oublié</string>
+    <string name="connection" translatable="false">Connexion</string>
+    <string name="enregestriecompte">Enregistrement Compte </string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="tele">Téléphone</string>
+    <string name="jaccepte">J\'accepte les Conditions Générals AUTOAPP.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="info">Cette application est créé pour vous aider à découvrez toutes les offres et les promotions de l’année sur une grande sélection de marque et module des voitures neuves au Maroc sans déplacer vers l’agence</string>
+    <string name="info2">Votre satisfait ... Notre bonheur.</string>
+    <string name="cree">Créé par : </string>
+    <string name="abdo">ABDALGHANI NAIRI</string>
+    <string name="karima">KARIMA AFERIOU</string>
+    <string name="idée">Idée par : </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

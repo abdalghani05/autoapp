@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0AA68C</color>
+    <color name="colorPrimaryDark">#068E72</color>
+    <color name="colorAccent">#54B568</color>
+    <color name="border">#000000</color>
+    <color name="motdepasse">#068E72</color>
+    <color name="textcherche">#068E72</color>
+</resources>
